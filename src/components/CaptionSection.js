@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import styled from "styled-components";
 
-const CaptionSection = ({ caption, height, color }) => {
-  const style = useMemo(() => ({ top: height * 4 / 5 }), [height]);
+const CaptionSection = ({ caption, height, color, fontSize }) => {
+  const style = useMemo(() => ({ top: height * 4 / 5, fontSize: fontSize + "px" }), [fontSize, height]);
 
   return (
     <Div style={style}>
